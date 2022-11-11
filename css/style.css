@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 5px;
+}
+
+.content {
+    position: relative;
+    height: 90vh;
+    width: 95vw;
+}
+
+.square {
+    background-color: red;
+
+    height: 100px;
+    width: 100px;
+
+}
+
+.circle {
+    background-color: green;
+
+    height: 100px;
+    width: 100px;
+
+    border-radius: 100%;
+}
+
+.triangle {
+    height: 0;
+    width: 0;
+
+    border: 1px solid transparent;
+    border-bottom: 1px solid blue;
+}
+
+.square,
+.circle,
+.triangle{
+    position: absolute;
+    opacity: 80%;
+}
+
+.square,
+.circle {
+    border: 1px solid black;
+}
+
+
+.yellow {
+    background-color: yellow;
+    z-index: 1;
+}
+
+.yellowTriangle {
+    border-bottom-color: yellow;
+    z-index: 1;
+}
